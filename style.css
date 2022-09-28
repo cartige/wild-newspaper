@@ -4,33 +4,31 @@
     list-style: none;
     font-family: Verdana, Geneva, sans-serif;
 }
-#navBar{
-    display: flex;
-    justify-content: flex-start;
-}
-header  {
-    display: flex;
-    justify-content: flex-start;
-    background: rgb(255, 255, 255);
-   
 
-}
 nav li {
+    
     display: inline-block;
-    margin: 0  8px;
-    line-height: 70px;
-
+    margin: 0  20px;
+    line-height: 100px;
+    
 }
-nav a {
 
-color: white ; 
+nav a { 
 font-size: 18px;
 text-transform: uppercase;
 border: 2px transparent;
-padding: 10px 10px;
+padding: 15px 15px;
+margin-left: 100px;
+width: 100%;
+
+
+
 }
 nav ul{
-    position: fixed;
+    text-align: center;
+    border:none;
+    background: rgb(234, 104, 171);
+    margin-bottom: 0px;
 }
 
 a.active,a:hover{
@@ -65,6 +63,47 @@ a:hover{
 a:hover::after {
     animation: animLink 1.4s infinite ease-in-out;
 }
+    @keyframes animLink {
+    75% {  
+        transform:scaleX(0.1);     
+    }
+    100%{
+        transform: scaleX(1);
+    }}
+
+    h1{
+        text-align: center;
+        margin: 2%;
+        font-size: 3rem;
+        letter-spacing: 3rem;
+    }
+     .imgP{
+        background-image: url(./assets/photo\ promos.jfif);
+        background-position: center;
+        background-size: cover; 
+        width: 100vw;
+        height:70vh; 
+    }
+
+    .flexer{
+        display:flex;
+       
+    }
+
+    .topBar{
+        height:12vh;
+        margin-bottom: 2vh;;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .topBar > *, .topBar ul{
+        height:100%;
+    }
+
+    nav  {
+        flex-grow: 1;
+    }
+
 nav ul{
     position: fixed;
     width:100%;
@@ -128,35 +167,5 @@ footer ul li:hover{
     color:  #006bbd;
     cursor: pointer;
 }
-nav{
-    height: 80px;
-    width: 100%;
-}
-nav ul {
-    float: right;
-    margin-right: 40px;
-}
-@keyframes animLink {
-    50% {
-        transform:scaleX(0.2);
-    }
-    100%{
-        transform: scaleX(1);
-    }
-}
-h1{
-    margin-top: 100px;
-    font-family: "font-bold";
-    letter-spacing: 6px;
-    color: #000000;
-}
-.imgP{
-    background-image: url(./assets/photo\ promos.jfif);
-    width: 100vw;
-    height: 50vh;
-}
-
-
-
 
 
