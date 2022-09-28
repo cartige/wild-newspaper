@@ -8,9 +8,7 @@
 nav{ 
     height: 80px;
     width: 100%;
-
 }
-
 label.logo{
     
 }
@@ -100,6 +98,7 @@ nav ul{
 }
 h2{
     text-decoration: underline;
+    font-size: 1.6rem;
 }
 p, h2{
     margin: 1rem;
@@ -110,11 +109,6 @@ p, h2{
     flex-flow: column wrap;
     justify-content: center;
 }  
-
-h2 {
-    font-size: 1.6rem;
-}
-
 #js:hover, #data:hover, #php:hover{
     box-shadow: 5px 5px 10px black;
     cursor: pointer;
@@ -134,3 +128,21 @@ footer ul li:hover{
     color:  #006bbd;
     cursor: pointer;
 }
+@keyframes animLink {
+    50% {
+        transform:scaleX(0.2);
+    }
+    100%{
+        transform: scaleX(1);
+    }}
+    h1{
+        margin-top: 100px;
+        font-family: "font-bold";
+        letter-spacing: 6px;
+        color: #000000;
+    }
+     .imgP{
+        background-image: url(./assets/photo\ promos.jfif);
+        width: 100vw;
+        height: 50vh;
+    }
