@@ -3,36 +3,32 @@
     margin: 0;
     list-style:none;
 }
-#navBar{
-    display: flex;
-    justify-content: flex-start;
-}
-header  {
-    display: flex;
-    justify-content: flex-start;
-    background: rgb(255, 255, 255);
-   
-
-}
 
 nav li {
+    
     display: inline-block;
-    margin: 0  8px;
-    line-height: 70px;
-
+    margin: 0  20px;
+    line-height: 100px;
+    
 }
+
 nav a {
-color: white ; 
+color: rgb(2, 2, 2) ; 
 font-size: 18px;
 text-transform: uppercase;
 border: 2px transparent;
-padding: 10px 10px;
+padding: 15px 15px;
+margin-left: 100px;
+width: 100%;
+
+
+
 }
 nav ul{
-    position: fixed;
-    
-   
-    
+    text-align: center;
+    border:none;
+    background: rgb(234, 104, 171);
+    margin-bottom: 0px;
 }
 
 a.active,a:hover{
@@ -84,8 +80,26 @@ a:hover::after {
     }
      .imgP{
         background-image: url(./assets/photo\ promos.jfif);
+        background-position: center;
+        background-size: cover; 
         width: 100vw;
-        height: 50vh; 
+        height:70vh; 
     }
 
-       
+    .flexer{
+        display:flex;
+    }
+
+    .topBar{
+        height:12vh;
+        margin-bottom: 2vh;;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .topBar > *, .topBar ul{
+        height:100%;
+    }
+
+    nav  {
+        flex-grow: 1;
+    }
