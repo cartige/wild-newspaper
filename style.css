@@ -4,68 +4,67 @@
     list-style: none;
     /* font-family: Verdana, Geneva, sans-serif; */
 }
-
-nav{ 
-    height: 80px;
-    width: 100%;
+#navBar{
+    display: flex;
+    justify-content: flex-start;
+}
+header  {
+    display: flex;
+    justify-content: flex-start;
+    background: rgb(255, 255, 255);
+   
 
 }
 
-label.logo{
-    
-}
-nav ul {
-    float: right;
-    margin-right: 40px;
-}
 nav li {
     display: inline-block;
     margin: 0  8px;
-    line-height: 80px;
+    line-height: 70px;
 
 }
 nav a {
-    color: white ; 
-    font-size: 18px;
-    text-transform: uppercase;
-    border: 1px solid transparent;
-    padding: 7px 10px;
-    border-radius: 3px;
+
+color: white ; 
+font-size: 18px;
+text-transform: uppercase;
+border: 2px transparent;
+padding: 10px 10px;
 }
+nav ul{
+    position: fixed;
+}
+
 a.active,a:hover{
     border: 1px solid white;
     transition: .5s;
 
 } 
-nav #icon{
-    color: white; 
-    font-size:30px ;
-    line-height: 80px;
-    float: right;
-    margin-right: 40px;
+a,a:visited {
     cursor: pointer;
-
+    position: relative;
+    text-decoration: none;
+    color:#fefeff;
+    transition: 0.1s linear;
+    font-size: calc(0.8rem + 0.8vw);
 }
 
-@media(max-width: 1048px){
-    label.logo{
-        font-size: 32px;
-        padding-left: 60px;
-
-    }
+a::after { 
+    content:"" ;
+    position: absolute;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    transform-origin: left;
 }
-nav ul{
-    margin-right: 20px;
-
-}
-nav a{
-    font-size: 17px;
+a:hover{
+    transform: scale(1.04);
+    color:#fefeff;
 }
 
-@media( max-width:909px )
-{
-    nav#icon{display: block; }
-    
+a:hover::after {
+    animation: animLink 1.4s infinite ease-in-out;
 }
 nav ul{
     position: fixed;
