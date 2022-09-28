@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    /* font-family: Verdana, Geneva, sans-serif; */
+    font-family: Verdana, Geneva, sans-serif;
 }
 
 nav li {
@@ -137,6 +137,7 @@ nav ul{
 }
 h2{
     text-decoration: underline;
+    font-size: 1.6rem;
 }
 p, h2{
     margin: 1rem;
@@ -147,11 +148,6 @@ p, h2{
     flex-flow: column wrap;
     justify-content: center;
 }  
-
-h2 {
-    font-size: 1.6rem;
-}
-
 #js:hover, #data:hover, #php:hover{
     box-shadow: 5px 5px 10px black;
     cursor: pointer;
@@ -171,4 +167,5 @@ footer ul li:hover{
     color:  #006bbd;
     cursor: pointer;
 }
+
 
