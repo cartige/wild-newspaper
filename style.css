@@ -64,19 +64,18 @@ a:hover::after {
     animation: animLink 1.4s infinite ease-in-out;
 }
     @keyframes animLink {
-    50% {  
-        transform:scaleX(0.2);     
+    75% {  
+        transform:scaleX(0.1);     
     }
     100%{
         transform: scaleX(1);
     }}
 
     h1{
-        
-        margin-top: 100px;
-        font-family: "font-bold";
-        letter-spacing: 6px;
-        color: #000000;
+        text-align: center;
+        margin: 2%;
+        font-size: 3rem;
+        letter-spacing: 3rem;
     }
      .imgP{
         background-image: url(./assets/photo\ promos.jfif);
