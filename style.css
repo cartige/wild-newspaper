@@ -2,6 +2,15 @@
     padding: 0;
     margin: 0;
     list-style: none;
+<<<<<<< Updated upstream
+=======
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body{
+    width: 100%;
+>>>>>>> Stashed changes
 }
 
 nav {
@@ -29,14 +38,22 @@ nav a {
 
 nav li {
     display: inline-block;
+<<<<<<< Updated upstream
     margin: 0 8px;
+=======
+>>>>>>> Stashed changes
     line-height: 80px;
 
 }
 
 nav a {
+<<<<<<< Updated upstream
     color: white;
     font-size: 18px;
+=======
+    color: black;
+    font-size: 1rem;
+>>>>>>> Stashed changes
     text-transform: uppercase;
     border: 1px solid transparent;
     padding: 7px 10px;
@@ -44,9 +61,17 @@ nav a {
 }
 
 nav ul {
+<<<<<<< Updated upstream
     text-align: center;
     border: none;
     background: rgb(234, 104, 171);
+=======
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    border: none;
+    background: linear-gradient(200deg, var(--secondary-color), white);
+>>>>>>> Stashed changes
     margin-bottom: 0px;
 
 }
@@ -153,13 +178,13 @@ nav {
 
 .image-data-php {
     width: auto;
-    height: 10rem;
+    height: 15rem;
     margin: 1rem;
 }
 
 .image-js {
     width: auto;
-    height: 10rem;
+    height: 15rem;
     margin: 1rem;
 
 }
@@ -187,19 +212,9 @@ h2 {
     cursor: pointer;
 }
 
-footer {
-    border-top: 2px solid var(--secondary-color);
-    margin: 1rem;
-}
 
 h2 {
     text-decoration: underline;
-}
-
-p,
-h2 {
-    margin: 1rem;
-
 }
 
 .flex-description {
@@ -207,6 +222,7 @@ h2 {
     flex-flow: column wrap;
     justify-content: center;
 }
+<<<<<<< Updated upstream
 
 footer ul {
     margin-top: 1rem;
@@ -242,9 +258,13 @@ footer ul li:hover {
     cursor: pointer;
 }
 
+=======
+>>>>>>> Stashed changes
 .article {
     display: flex;
     justify-content: space-around;
+    margin-top: 3em;
+    margin-bottom: 3em;
 
 }
 
@@ -266,7 +286,7 @@ footer ul li:hover {
     animation-name: example;
     filter: brightness(50%);
     animation-duration: 0.25s;
-    border-left: 8px solid #f65454;
+    border-left: 8px solid var(--secondary-color);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
@@ -291,4 +311,114 @@ footer ul li:hover {
 
 .wildInfos2 {
     background-image: url("assets/wildinfos2.png");
+<<<<<<< Updated upstream
+=======
+}
+
+body{
+    background: linear-gradient(var(--secondary-color), white);
+}
+
+@media screen and (max-width : 600px) { 
+    .hidden{ 
+        display: none;
+        visibility: hidden;
+
+    }
+
+    #js, #php, #data{
+        flex-direction: column;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .flex-article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: auto;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imgP{
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width : 449px){
+    a::after{
+        left: 4vw;
+        bottom: 8vh;
+    }
+}
+/* #js>h2,
+    p {
+        border: 2px solid black;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+    } 
+
+    #js,
+    #data,
+    #php {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 0px;
+    } */
+
+
+    
+
+/*footer */
+.footer {
+    font-size: 0.8em;
+    margin : 1rem;
+    border-top: 3px solid var(--secondary-color);
+}
+h4{
+    font-size: 1em;
+    margin: 1rem;
+}
+.bloc-footer{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+}
+.bloc-footer-projet{
+    margin: 2em 0 10em 0;
+    text-align: center;
+}
+.bloc-footer:hover,
+.bloc-footer-projet:hover{
+    color: var(--secondary-color);
+    cursor: pointor;
+}
+h4:hover{
+    color: var(--secondary-color);
+    cursor: pointor;
+>>>>>>> Stashed changes
 }
