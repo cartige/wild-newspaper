@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    
+}
+
+body{
+    width: 100%;
 }
 
 nav {
@@ -11,10 +16,8 @@ nav {
 }
 
 nav li {
-
-    display: inline-block;
-    margin: 0 20px;
-    line-height: 100px;
+    /* margin: 0 20px; */
+    line-height: 4rem;
 
 }
 
@@ -23,13 +26,12 @@ nav a {
     text-transform: uppercase;
     border: 2px transparent;
     padding: 10px 10px;
-    margin-left: 100px;
     width: 100%;
 }
 
 nav li {
     display: inline-block;
-    margin: 0 8px;
+    margin: ;
     line-height: 80px;
 
 }
@@ -44,6 +46,9 @@ nav a {
 }
 
 nav ul {
+    display: flex;
+    justify-content: space-around;
+    
     text-align: center;
     border: none;
     background: linear-gradient(200deg, #f65454, white);
@@ -74,8 +79,8 @@ a::after {
     width: 100%;
     background: rgb(255, 255, 255);
     height: 1px;
-    bottom: -4px;
-    left: 0;
+    bottom: 0;
+    left: 1vw;
     transform-origin: left;
 }
 
@@ -122,7 +127,7 @@ h1 {
     height: 12vh;
     margin-bottom: 2vh;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -220,13 +225,6 @@ footer ul li:hover {
     cursor: pointer;
 }
 
-#js:hover,
-#data:hover,
-#php:hover {
-    box-shadow: 5px 5px 10px black;
-    cursor: pointer;
-}
-
 footer {
     border-top: 2px solid var(--secondary-color);
     margin: 1rem;
@@ -298,3 +296,64 @@ body{
     background: linear-gradient(#f65454, white);
 }
 
+@media screen and (max-width :1024px) { 
+    .hidden{ 
+        display: none;
+        visibility: hidden;
+
+    }
+
+    #js, #php, #data{
+        flex-direction: column;
+    }
+    h2{
+        max-width: inherit;
+        text-align: center;
+    }
+
+    .flex-article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: auto;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+/* #js>h2,
+    p {
+        border: 2px solid black;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+    } 
+
+    #js,
+    #data,
+    #php {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 0px;
+    } */
+}
