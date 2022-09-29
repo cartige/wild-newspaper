@@ -5,14 +5,11 @@
     
 }
 
-body{
-    width: 100%;
-}
-
 nav {
     height: 80px;
     width: 100%;
     background: blueviolet;
+    flex-grow: 1;
 }
 
 nav li {
@@ -31,8 +28,7 @@ nav a {
 
 nav li {
     display: inline-block;
-    margin: ;
-    line-height: 80px;
+    /* line-height: 80px; */
 
 }
 
@@ -113,6 +109,8 @@ h1 {
     background-image: url(./assets/photo\ promos.jfif);
     background-position: center;
     background-size: cover;
+    position: relative;
+    top: 10vh;
     width: 100vw;
     height: 65vh;
 }
@@ -128,16 +126,12 @@ h1 {
     position: fixed;
     width: 100vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
 }
 
 .topBar>*,
 .topBar ul {
     height: 100%;
-}
-
-nav {
-    flex-grow: 1;
-
 }
 
 #js {
@@ -205,6 +199,10 @@ p,
 h2 {
     margin: 1rem;
 
+}
+
+.articles-menu{
+    background-color: rgb(255, 236, 236);
 }
 
 .flex-description {
@@ -339,12 +337,20 @@ body{
     .imgP{
         height: 40vh;
     }
+
+    .articles-menu{
+        border-radius: 2%;
+    }
 }
 
 @media screen and (max-width : 449px){
     a::after{
         left: 4vw;
         bottom: 8vh;
+    }
+
+    .imgP{
+        height: 20vh;
     }
 }
 /* #js>h2,
