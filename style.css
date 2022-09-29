@@ -46,7 +46,7 @@ nav a {
 nav ul {
     text-align: center;
     border: none;
-    background: rgb(234, 104, 171);
+    background: linear-gradient(200deg, #f65454, white);
     margin-bottom: 0px;
 
 }
@@ -121,7 +121,8 @@ h1 {
 .topBar {
     height: 12vh;
     margin-bottom: 2vh;
-    ;
+    position: fixed;
+    width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -291,4 +292,12 @@ footer ul li:hover {
 
 .wildInfos2 {
     background-image: url("assets/wildinfos2.png");
+}
+
+body{
+    background: linear-gradient(#f65454, white);
+}
+
+@media screen and (min-width: 1024px){
+
 }
