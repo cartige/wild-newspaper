@@ -22,10 +22,10 @@ nav li {
 }
 
 nav a {
-    font-size: 18px;
+    font-size: 1.3rem;
     text-transform: uppercase;
     border: 2px transparent;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     width: 100%;
 }
 
@@ -38,7 +38,7 @@ nav li {
 
 nav a {
     color: white;
-    font-size: 10px;
+    font-size: 0.6rem;
     text-transform: uppercase;
     border: 1px solid transparent;
     padding: 0px 10px;
@@ -79,8 +79,8 @@ a::after {
     width: 100%;
     background: rgb(255, 255, 255);
     height: 1px;
-    bottom: 0;
-    left: 1vw;
+    bottom: 0vh;
+    left: 0vw;
     transform-origin: left;
 }
 
@@ -107,7 +107,6 @@ h1 {
     text-align: center;
     margin: 2%;
     font-size: 3rem;
-    letter-spacing: 3rem;
 }
 
 .imgP {
@@ -293,10 +292,10 @@ footer ul li:hover {
 }
 
 body{
-    background: linear-gradient(#f65454, white);
+    background: linear-gradient(#f65454c4, white);
 }
 
-@media screen and (max-width :1024px) { 
+@media screen and (max-width : 600px) { 
     .hidden{ 
         display: none;
         visibility: hidden;
@@ -306,8 +305,8 @@ body{
     #js, #php, #data{
         flex-direction: column;
     }
+
     h2{
-        max-width: inherit;
         text-align: center;
     }
 
@@ -337,7 +336,17 @@ body{
         flex-direction: column;
     }
 
+    .imgP{
+        height: 40vh;
+    }
+}
 
+@media screen and (max-width : 449px){
+    a::after{
+        left: 4vw;
+        bottom: 8vh;
+    }
+}
 /* #js>h2,
     p {
         border: 2px solid black;
@@ -356,4 +365,3 @@ body{
         flex-direction: column;
         border: 0px;
     } */
-}
