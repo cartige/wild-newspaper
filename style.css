@@ -2,87 +2,54 @@
     padding: 0;
     margin: 0;
     list-style: none;
-<<<<<<< Updated upstream
-=======
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
 }
-
 body{
     width: 100%;
->>>>>>> Stashed changes
+    background: linear-gradient(200deg, #F65454, white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
 }
-
+/*nav */
 nav {
     height: 80px;
     width: 100%;
     background: blueviolet;
+    flex-grow: 1;
 }
-
 nav li {
-
     display: inline-block;
     margin: 0 20px;
     line-height: 100px;
-
 }
-
 nav a {
-    font-size: 18px;
+    font-size: 1rem;
     text-transform: uppercase;
     border: 2px transparent;
+    border: 1px solid transparent;
     padding: 15px 15px;
+    padding: 7px 10px;
     margin-left: 100px;
     width: 100%;
-}
-
-nav li {
-    display: inline-block;
-<<<<<<< Updated upstream
-    margin: 0 8px;
-=======
->>>>>>> Stashed changes
-    line-height: 80px;
-
-}
-
-nav a {
-<<<<<<< Updated upstream
-    color: white;
-    font-size: 18px;
-=======
     color: black;
-    font-size: 1rem;
->>>>>>> Stashed changes
-    text-transform: uppercase;
-    border: 1px solid transparent;
-    padding: 7px 10px;
     border-radius: 3px;
 }
-
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
 nav ul {
-<<<<<<< Updated upstream
     text-align: center;
     border: none;
-    background: rgb(234, 104, 171);
-=======
     display: flex;
     justify-content: space-around;
-    text-align: center;
-    border: none;
     background: linear-gradient(200deg, var(--secondary-color), white);
->>>>>>> Stashed changes
     margin-bottom: 0px;
-
 }
-
 a.active,
 a:hover {
     border: 1px solid white;
     transition: .5s;
-
 }
-
 a,
 a:visited {
     cursor: pointer;
@@ -92,7 +59,6 @@ a:visited {
     transition: 0.1s linear;
     font-size: calc(0.8rem + 0.8vw);
 }
-
 a::after {
     content: "";
     position: absolute;
@@ -103,16 +69,13 @@ a::after {
     left: 0;
     transform-origin: left;
 }
-
 a:hover {
     transform: scale(1.04);
     color: #fefeff;
 }
-
 a:hover::after {
     animation: animLink 1.4s infinite ease-in-out;
 }
-
 @keyframes animLink {
     75% {
         transform: scaleX(0.1);
@@ -122,13 +85,18 @@ a:hover::after {
         transform: scaleX(1);
     }
 }
-
 h1 {
     text-align: center;
     margin: 2%;
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 3rem;
+    font-family: myFirstFont;
+    
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url(Voyage.otf);
+  }
 
 .imgP {
     background-image: url(./assets/photo\ promos.jfif);
@@ -137,29 +105,20 @@ h1 {
     width: 100vw;
     height: 65vh;
 }
-
 .flexer {
     display: flex;
-
 }
-
 .topBar {
     height: 12vh;
     margin-bottom: 2vh;
     ;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
 .topBar>*,
 .topBar ul {
     height: 100%;
 }
-
-nav {
-    flex-grow: 1;
-}
-
-
+/*section*/
 #js {
     display: flex;
     justify-content: space-around;
@@ -167,7 +126,6 @@ nav {
     border: 2px solid black;
     margin: 1rem;
 }
-
 #data,
 #php {
     display: flex;
@@ -175,99 +133,43 @@ nav {
     border: 2px solid black;
     margin: 1rem;
 }
-
 .image-data-php {
     width: auto;
-    height: 15rem;
+    height: 20rem;
     margin: 1rem;
 }
-
 .image-js {
     width: auto;
-    height: 15rem;
+    height: 20rem;
     margin: 1rem;
-
 }
-
 h2 {
     text-decoration: underline;
     font-size: 1.6rem;
 }
-
 p,
 h2 {
     margin: 1rem;
-
 }
-
-.flex-description {
-    display: flex;
-    justify-content: center;
+.font-size-articles{
+    font-size: 1.3rem;
 }
-
 #js:hover,
 #data:hover,
 #php:hover {
     box-shadow: 5px 5px 10px black;
     cursor: pointer;
 }
-
-
-h2 {
-    text-decoration: underline;
-}
-
 .flex-description {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
-<<<<<<< Updated upstream
-
-footer ul {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-footer ul li:hover {
-    color: #006bbd;
-    cursor: pointer;
-}
-
-#js:hover,
-#data:hover,
-#php:hover {
-    box-shadow: 5px 5px 10px black;
-    cursor: pointer;
-}
-
-footer {
-    border-top: 2px solid var(--secondary-color);
-    margin: 1rem;
-}
-
-footer ul {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-around;
-}
-
-footer ul li:hover {
-    color: #006bbd;
-    cursor: pointer;
-}
-
-=======
->>>>>>> Stashed changes
+/*cards*/
 .article {
     display: flex;
     justify-content: space-around;
-    margin-top: 3em;
-    margin-bottom: 3em;
-
 }
-
 .card {
     background-size: cover;
     width: 20%;
@@ -279,7 +181,62 @@ footer ul li:hover {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
-
+.card:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    filter: brightness(50%);
+    animation-duration: 0.25s;
+    border-left: 8px solid #F65454;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.card h6 {
+    width: 75%;
+    color: white;
+    font-size: 1.5rem;
+}
+.talentFair {
+    background-image: url("assets/talentfair.png");
+}
+.wildBreakfast {
+    background-image: url("assets/wildbreakfast.png");
+}
+.wildInfos1 {
+    background-image: url("assets/wildinfos1.png");
+}
+.wildInfos2 {
+    background-image: url("assets/wildinfos2.png");
+}
+@media screen and (max-width: 600px) {
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: auto;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+.article {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.card {
+    background-size: cover;
+    width: 20%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
 .card:hover {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -289,80 +246,80 @@ footer ul li:hover {
     border-left: 8px solid var(--secondary-color);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
-
 .card h6 {
     width: 75%;
     color: white;
     font-size: 1.5rem;
 }
-
 .talentFair {
     background-image: url("assets/talentfair.png");
 }
-
 .wildBreakfast {
     background-image: url("assets/wildbreakfast.png");
 }
-
 .wildInfos1 {
     background-image: url("assets/wildinfos1.png");
 }
-
 .wildInfos2 {
     background-image: url("assets/wildinfos2.png");
-<<<<<<< Updated upstream
-=======
 }
-
-body{
-    background: linear-gradient(var(--secondary-color), white);
-}
-
 @media screen and (max-width : 600px) { 
     .hidden{ 
         display: none;
         visibility: hidden;
-
     }
-
     #js, #php, #data{
         flex-direction: column;
     }
-
     h2{
         text-align: center;
     }
-
     .flex-article{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-
     .article {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .card {
         width: auto;
         margin-bottom: 2rem;
         margin-left: 2rem;
         margin-right: 2rem;
     }
-
     body{
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-
     .imgP{
         height: 40vh;
     }
+}
+/*footer */
+.footer {
+    font-size: 0.8em;
+    margin : 1rem;
+    border-top: 3px solid var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+}
+h4{
+    font-size: 1em;
+    margin: 1rem;
+}
+.bloc-footer-projet{
+    margin: 2em 0 10em 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+.hover-footer:hover{
+    color: var(--secondary-color);
+    cursor: pointer;
 }
 
 @media screen and (max-width : 449px){
@@ -370,55 +327,4 @@ body{
         left: 4vw;
         bottom: 8vh;
     }
-}
-/* #js>h2,
-    p {
-        border: 2px solid black;
-    }
-
-    h2 {
-        display: flex;
-        justify-content: center;
-    } 
-
-    #js,
-    #data,
-    #php {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        border: 0px;
-    } */
-
-
-    
-
-/*footer */
-.footer {
-    font-size: 0.8em;
-    margin : 1rem;
-    border-top: 3px solid var(--secondary-color);
-}
-h4{
-    font-size: 1em;
-    margin: 1rem;
-}
-.bloc-footer{
-    display: flex;
-    flex-direction: column ;
-    justify-content: space-around;
-}
-.bloc-footer-projet{
-    margin: 2em 0 10em 0;
-    text-align: center;
-}
-.bloc-footer:hover,
-.bloc-footer-projet:hover{
-    color: var(--secondary-color);
-    cursor: pointor;
-}
-h4:hover{
-    color: var(--secondary-color);
-    cursor: pointor;
->>>>>>> Stashed changes
 }
