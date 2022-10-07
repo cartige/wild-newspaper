@@ -256,6 +256,7 @@ h1 {
 
 .Brkxt {
 
+    
     border-right: 3px solid black;
     border-top: 3px solid black;
 
@@ -333,8 +334,9 @@ p span {
 
 
 .imgtal {
-    Width: 60vh;
+    width: 60vh;
     height: 20vh;
+    margin-right: 1.5rem;
 
 }
 
@@ -378,11 +380,11 @@ p span {
 }
 
 h5 {
-    margin-top: 2rem;
+    margin-top: 8rem;
     font-size: 3rem;
     font-family: myFirstFont;
     text-align: center;
-    text-decoration: underline;
+   
 }
 
 
@@ -394,7 +396,7 @@ h6 {
 
 }
 
-.typewriter h1 {
+ h1 {
     color: black;
     font-family: myFirstFont;
     font-size: 4rem;
@@ -1024,4 +1026,71 @@ div input {
     footer {
         margin-top: 2rem;
     }
+    .ok {
+        display: hidden;
+    }
+    .footer {
+        font-size: 0.8em;
+    }
+    footer {
+        margin-top: 2rem;
+    }
+    .txt2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .bloc-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .bloc-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .im {
+        width: 10rem;
+        height: 10rem;
+    }
+    .imgtal {
+        width: 10rem;
+        height: 8rem;
+        margin-bottom: 1rem;
+    }
+    .Talentxt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .imgtek {
+        width: 10rem;
+        height: 10rem;
+    }
+    .Brkxt p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .firtxt {
+        text-align: center;
+    }
+    h1 {
+        display: flex;
+        font-size: 3rem;
+        width: auto;
+        letter-spacing: 1rem;
+        margin-bottom: 2rem;
+    }
+    .ok {
+        display: inline;
+    }
 }
+
+
+
