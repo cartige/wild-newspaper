@@ -1,0 +1,82 @@
+/*  Veille  */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.vei-section{
+    max-width: 960px;
+    margin: 20 auto;
+    padding: 3% 2%;
+}
+.vei-grid{
+    margin: 20px 10px 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    width: 100vw;
+}
+.vei-grid:after{
+    clear: both;
+}
+.vei-grid li{
+    width: 600px;
+    height: 350px;
+    display: inline-block;
+    margin: 70px;
+}
+.vei-box{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    transform-origin: center;
+    transform: perspective(800px) rotateY(30deg);
+    transition: 0.8s;
+    -webkit-box-reflect:below 1px  linear-gradient(transparent,transparent, #0004);
+}
+.vei-box:hover{
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+.vei-img-1,a{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url(./assets/pepper.png);
+    background-position: center;
+    background-size: cover;
+    margin: 3;
+}
+.vei-img-2{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url(./assets/starlink.png);
+    background-position: center;
+    background-size: cover;
+}
+.vei-img-3{
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.10)),
+    url(./assets/priscillia.png);
+    background-position: center;
+    background-size: contain;
+}
+.photo{
+    width:90px;
+    height:90px;
+    background-position: center;
+    background-size: cover;
+}
+@media screen and (max-width:600px){
+    .container{
+        margin-top: 300px;
+        padding:0;
+        }
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+        margin: 20px;
+    }
+    a {
+        color: blanchedalmond;
+    }
+
