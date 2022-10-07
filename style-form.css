@@ -1,0 +1,223 @@
+:root{
+    --borderHelp: 1px dotted yellowgreen;
+    --primary-color: black;
+    --secondary-color: #ECECEC;
+    --third-color: #009298;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@keyframes example {
+    from {bottom: 100vh;}
+    to {bottom: initial;}
+  }
+
+  .overlay{
+    position: absolute;
+    top: -100vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);  
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  #popup-overlay:target{
+    visibility: visible;
+    background-color: rgba(212, 212, 212, 0.486);
+    opacity: 1;
+    top: 0;
+  }
+
+  #popup-overlay{
+    border-radius: 5px;
+    position: fixed;
+    overflow-y: scroll;
+    /* transition: all 1s ease-in-out; */
+  }
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: linear-gradient(rgba(255, 255, 255, 0.7),
+                                rgba(255, 255, 255, 0.7)),
+                                 url('/assets/backgroundFooter.jpg');
+                                 ;
+    background-size: cover;            
+    /* border: var(--borderHelp); */
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 2rem;
+    z-index: 1;
+    max-width: 20rem;
+    max-height: fit-content;
+    min-width: 7rem;
+    min-height: 7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 0;
+    right: 0;
+}
+
+/* #contact-form:target{
+    bottom: initial;
+    top: 5vh;
+    transition: all 2s ease-in-out;
+} */
+
+
+
+#form-title{
+    /* border: var(--borderHelp); */
+    font-family: 'Courier New', Courier, monospace;
+    max-width: fit-content;
+    padding: 0.5rem;
+    margin: 0 auto 2vh;
+}
+
+.form-label-textarea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(182, 182, 182, 0.76);
+    position: relative;
+    font-size: 1.1rem;
+    top: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#test{
+    /* border: var(--borderHelp); */
+    z-index: 3;
+    margin: 0 auto;
+}
+
+.form-entries{
+    border-radius: 2%;
+    margin: 1rem;
+}
+
+.form-label-input{
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 1.1rem;
+    /* border: var(--borderHelp); */
+    padding: 1rem;
+    resize: none;
+    border-radius: 1rem;
+    background-color: rgba(182, 182, 182, 0.76);
+}
+
+.form-input{
+    border-radius: 0.5rem;
+}
+
+.form-input:hover{
+    box-shadow: inset 1px 1px 2px rgba(128, 128, 128, 0.76);
+}
+
+label{
+    margin-right: 1rem;
+}
+
+textarea{
+    /* position: relative; */
+    max-height: max-content;
+    resize: none;
+    border-radius: 1rem;
+    width: -webkit-fill-available;
+    height: 20vh;
+}
+
+#contact-button{
+    border: 0;
+    position: relative;
+    top: 1.5rem;
+    width: 9rem;
+    margin: auto auto;
+    line-height: 2.5;
+    padding: 0 1rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background: linear-gradient(rgba(59, 66, 59, 0.795),
+                                rgba(77, 90, 77, 0.651) 30%);
+
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    
+}
+
+#contact-button:hover {
+    background-color: var(--third-color);
+    cursor: pointer;
+}
+
+#contact-button:active {
+    box-shadow: inset -2px -2px 3px var(--primary-color, 1),
+                inset 2px 2px 3px var(--primary-color);
+}
+
+/* .grey-bg{
+    background-color: rgba(161, 151, 152, 0.61)
+} */
+
+div input{
+    width: -webkit-fill-available;
+}
+
+#pop-up-message{
+    position: fixed;
+    width: 30vw;
+    height: 30vh;
+    left: 40vw;
+    bottom: 100vh;
+
+}
+
+.fill-pop-up{
+    background-color: blue;
+    text-align: center;
+    bottom: initial;
+}
+
+#close-cross:hover img{
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    transform: rotate(90deg);
+}
+
+#close-cross{
+    width: max-content;
+    cursor: pointer;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(255, 255, 255, 0.7)), url('assets/x-icon.jpg');
+    border-radius: 50%;
+}
+
+#close-cross img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-size: cover;
+    transition: all 200ms;
+}
+
+/* #close-cross a:hover{
+    transform: rotate(90deg);
+} */
+
+.ok{
+    color: #009298;
+}
