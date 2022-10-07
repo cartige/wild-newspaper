@@ -161,36 +161,23 @@ a:visited {
         transform: scaleX(1);
     }
 }
-
-
 /*section modifié par kevin le 5/10/22*/
-
-
-
 h1 {
     text-align: center;
     margin: 2%;
     font-size: 4rem;
     letter-spacing: 3rem;
     font-family: myFirstFont;
-
 }
-
 .bloc-container {
     display: flex;
     justify-content: space-between;
-
     align-items: center;
-
 }
-
-
 .Talentxt {
-
     border-right: 3px solid black;
     border-top: 3px solid black;
 }
-
 .Brkxt {
 
     border-right: 3px solid black;
@@ -203,55 +190,36 @@ h1 {
     height: 15rem;
     width: 60rem;
 }
-
 .bloc-container3 {
     margin-top: 4rem;
     display: flex;
     justify-content: space-between;
-
     align-items: stretch;
-
-
 }
-
-
 .im {
 
     height: 10rem;
     width: 15rem;
     margin-right: 0rem;
     border-top: 0.15rem solid black;
-
-
-
 }
-
 button:hover {
-
     cursor: pointer
 }
-
 button {
-
-
     height: 4rem;
     width: 15rem;
     border-bottom: 0.15rem solid black;
     background-color: whitesmoke;
     font-size: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px;
-
 }
-
 .ok {
-
     color: #009298;
+    flex-wrap: nowrap;
+    font-weight: 6px;
 }
-
 .bloc-container2 {
-
-
-
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
@@ -259,61 +227,37 @@ button {
     align-items: stretch;
     border-left: 3px solid black;
     border-top: 3px solid black;
-
-
 }
-
-p span {
-    color: #009298;
-    font-weight: 6px;
-}
-
-
 .imgtal {
     Width: 60vh;
     height: 20vh;
-
 }
-
 .txt2 {
-
     Width: 100vh;
-
 }
-
 .underline {
     text-decoration: underline;
     color: black;
 }
-
 .firtxt {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
-
-
 }
-
 .fontprom {
     display: flex;
     justify-content: center;
     align-items: center;
-    aspect-ratio: auto;
     Width: 60vh;
-    height: 24vh;
-
+    height: 35vh;
 }
-
 .promo {
-
     padding-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 h5 {
     margin-top: 2rem;
     font-size: 3rem;
@@ -321,17 +265,13 @@ h5 {
     text-align: center;
     text-decoration: underline;
 }
-
-
 h6 {
     font-family: myFirstFont;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 0.2rem;
-
 }
-
-.typewriter h1 {
+h1 {
     color: black;
     font-family: myFirstFont;
     font-size: 4rem;
@@ -348,7 +288,6 @@ h6 {
     animation:
         typing 5.5s steps(30, end),
         blink-caret .5s step-end infinite;
-
     margin-bottom: 4rem;
     margin-top: 4rem;
     text-align: center;
@@ -359,7 +298,6 @@ h6 {
     from {
         width: 0
     }
-
     to {
         width: 100%
     }
@@ -372,51 +310,30 @@ h6 {
     to {
         border-color: transparent
     }
-
     20% {
         border-color: black
     }
 }
-
 /*FIN DE SECTION KEVIN */
-
-
-
 @font-face {
     font-family: myFirstFont;
     src: url(Voyage.otf);
 }
-
-.imgP {
-    background-image: url(./assets/photo\ promos.jfif);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    top: 10vh;
-    width: 100vw;
-    height: 65vh;
-}
-
 .flexer {
     display: flex;
 }
-
 .topBar {
     height: 12vh;
     margin-bottom: 2vh;
-    ;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 1;
 }
-
 .topBar>*,
 .topBar ul {
     height: 100%;
 }
-
 /*section modifié par kevin le 5/10/22*/
 #js {
-
     display: flex;
     justify-content: space-around;
     flex-direction: row-reverse;
@@ -427,36 +344,30 @@ h6 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-
 #data,
 #php {
     display: flex;
     justify-content: flex-start;
-
     margin: 2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-right: 3px double black;
     border-top: 3px double black;
     border-left: 3px double black;
 }
-
 .image-data-php {
     width: auto;
     height: 10rem;
     margin: 1rem;
 }
-
 .image-js {
     width: auto;
     height: 10rem;
     margin: 1rem;
 }
-
 .flex-description h2{
     text-decoration: underline;
     font-size: 1rem;
 }
-
 p,
 h2 {
     margin: 1rem;
@@ -465,31 +376,25 @@ h2 {
 .font-size-articles {
     font-size: 1rem;
 }
-
 #js:hover,
 #data:hover,
 #php:hover {
     box-shadow: 5px 5px 10px black;
     cursor: pointer;
 }
-
 .flex-description {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 
 }
-
-
-
-
+/*media */
 @media screen and (max-width: 600px) {
     .article {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .card {
         width: auto;
         margin-bottom: 2rem;
@@ -497,7 +402,6 @@ h2 {
         margin-right: 2rem;
     }
 }
-
 .article {
     display: flex;
     justify-content: space-around;
@@ -930,13 +834,9 @@ div input {
         font-size: 1em;
         display: none;
     }
-
     .wrapper.button span {
         display: inline;
     }
-
-
-
     .wrapper .button {
         display: flex;
         flex-direction: column;
@@ -949,16 +849,68 @@ div input {
         box-shadow: none;
         padding-left: 1em;
     }
-
-    span {
-        font-size: 1em;
+    .ok {
+        display: hidden;
     }
-
     .footer {
         font-size: 0.8em;
     }
-
     footer {
         margin-top: 2rem;
+    }
+    .txt2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .bloc-container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .bloc-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .im {
+        width: 10rem;
+        height: 10rem;
+    }
+    .imgtal {
+        width: 10rem;
+        height: 8rem;
+        margin-bottom: 1rem;
+    }
+    .Talentxt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .imgtek {
+        width: 10rem;
+        height: 10rem;
+    }
+    .Brkxt p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .firtxt {
+        text-align: center;
+    }
+    h1 {
+        display: flex;
+        font-size: 3rem;
+        width: auto;
+        letter-spacing: 1rem;
+        margin-bottom: 2rem;
+    }
+    .ok {
+        display: inline;
     }
 }
