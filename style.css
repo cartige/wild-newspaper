@@ -90,9 +90,14 @@ body {
         top: 50px;
         left: 50px;
     }
-}
+} 
 
-a,
+/* a{
+    text-decoration: none;
+    color: var(--primary-color);
+} */
+
+.nav-links a,
 a:visited {
     cursor: pointer;
     position: relative;
@@ -102,7 +107,17 @@ a:visited {
     font-size: calc(0.8rem + 0.8vw);
 }
 
-a::after {
+.hover-footer a,
+a:visited {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: 0.2s linear;
+    font-size: calc(0.8rem + 0.8vw);
+}
+
+.nav-links a::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -113,12 +128,32 @@ a::after {
     transform-origin: left;
 }
 
-a:hover {
+.hover-footer a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: var(--primary-color);
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    transform-origin: left;
+}
+
+.nav-links a:hover {
     transform: scale(1.04);
     color: var(--third-color);
 }
 
-a:hover::after {
+.hover-footer a:hover {
+    transform: scale(1.04);
+    color: var(--third-color);
+}
+
+.nav-links a:hover::after {
+    animation: animLink 1.4s infinite ease-in-out;
+}
+
+.hover-footer a:hover::after {
     animation: animLink 1.4s infinite ease-in-out;
 }
 
@@ -480,10 +515,9 @@ h6 {
     margin: 1rem;
 }
 
-h2 {
+.flex-description h2{
     text-decoration: underline;
     font-size: 1rem;
-
 }
 
 p,
@@ -783,6 +817,7 @@ h4 {
 
 
 /* debut popup-form-CSS */
+
 .overlay {
     position: absolute;
     top: -100vh;
@@ -798,6 +833,7 @@ h4 {
 #popup-overlay:target {
     visibility: visible;
     background-color: rgba(212, 212, 212, 0.486);
+    z-index: 1;
     opacity: 1;
     top: 0;
 }
@@ -808,7 +844,7 @@ h4 {
     overflow-y: scroll;
 }
 
-.contact-form {
+#contact-form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -865,15 +901,15 @@ h4 {
 }
 
 .form-input {
-    border-radius: 0.5rem;
+    border-radius: 0.5rem;   
 }
 
 .form-input:hover {
     box-shadow: inset 1px 1px 2px rgba(128, 128, 128, 0.76);
 }
 
-label {
-    margin-right: 1rem;
+#contact-form label {
+    margin-bottom: 1rem;
 }
 
 textarea {
@@ -927,8 +963,19 @@ div input {
     width: max-content;
     cursor: pointer;
     /* background-size: cover; */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7)), url('assets/xicon.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.7)), url('assets/xicon.jpg'), no-repeat;
     border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.relative-help{
+    position: relative;
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    top: 4vh;
 }
 
 #close-cross img {
@@ -977,7 +1024,4 @@ div input {
     footer {
         margin-top: 2rem;
     }
-
-
-
 }
